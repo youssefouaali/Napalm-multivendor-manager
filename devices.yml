@@ -1,0 +1,22 @@
+  devices:
+  - device_type: arista_eos
+    name: router1
+    type: router
+    host: 172.20.20.10
+    username: admin
+    password: admin
+
+
+  - device_type: arista_eos
+    name: switch1
+    type: switch
+    host: 172.20.20.11
+    username: admin
+    password: admin
+    vlans:
+      - id: 10
+        name: DATA
+      - id: 20
+        name: VOICE
+      - id: 30
+        name: SERVERS
